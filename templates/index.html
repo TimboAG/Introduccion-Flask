@@ -8,6 +8,8 @@
   </head>
 
   <body>
+    <img src="{{url_for( "static", filename='img/flasklogo.png')}}"
+    width="100px"/>
     <form
       action=""
       method="POST"
@@ -40,5 +42,7 @@
     <br />
     <button type="submit">Enviar</button>
     <button type="reset">Borrar</button>
+    #nombre de la funcion que retorna el url
+    <a href="{{url_for('blog')}}"> Ir a blog</a>
   </body>
 </html>
